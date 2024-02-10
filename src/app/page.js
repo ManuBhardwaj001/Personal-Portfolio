@@ -2,10 +2,16 @@ import Head from "next/head";
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Image from "next/image";
-import Avatar from "../../public/Avatar.png"
-import html from "../../public/html.png"
-import css from "../../public/css.png"
-import react from "../../public/react.png"
+import Avatar2 from "../../public/Avatar2.png";
+import html from "../../public/tech_stack/html.png";
+import css from "../../public/tech_stack/css.png";
+import react from "../../public/tech_stack/react.png";
+import next from "../../public/tech_stack/next.png";
+import java from "../../public/tech_stack/java.png"
+import javascript from "../../public/tech_stack/javascript.png"
+import bootstrap from "../../public/tech_stack/bootstrap.png"
+import tailwind from "../../public/tech_stack/tailwind.png"
+import git from "../../public/tech_stack/git.png"
 
 export default function Home() {
   return (
@@ -32,7 +38,7 @@ export default function Home() {
             <AiFillLinkedin />
           </div>
           <div className="relative mx-auto background-transparent w-80 h-80 mt-20 rounded-full overflow-hidden">
-            <Image className="w-120 h-80 rounded-full" alt="Avatar" src={Avatar} layout="fill" objectFit="cover" />
+            <Image className="w-120 h-80 rounded-full" alt="Avatar" src={Avatar2} layout="fill" objectFit="cover" />
           </div>
         </section>
         <section>
@@ -42,10 +48,16 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ab consequuntur quia, iusto esse eaque provident ducimus distinctio repudiandae perferendis!</p>
           </div>
           <div>
-            <div>
+            <div className="flex">
               <Image alt="react" src={react} width={100} height={100}></Image>
+              <Image alt="next" src={next} width={100} height={100}></Image>
+              <Image alt="java" src={java} width={100} height={100}></Image>
+              <Image alt="javascript" src={javascript} width={100} height={100}></Image>
+              <Image alt="bootstrap" src={bootstrap} width={100} height={100}></Image>
+              <Image alt="tailwind" src={tailwind} width={100} height={100}></Image>
               <Image alt="html" src={html} width={100} height={100}></Image>
               <Image alt="css" src={css} width={100} height={100}></Image>
+              <Image alt="git" src={git} width={100} height={100}></Image>
             </div>
           </div>
         </section>
