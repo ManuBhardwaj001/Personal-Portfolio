@@ -2,7 +2,7 @@ import Head from "next/head";
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Image from "next/image";
-import Avatar2 from "../../public/Avatar2.png";
+import Avatar from "../../public/Avatar.png";
 import html from "../../public/tech_stack/html.png";
 import css from "../../public/tech_stack/css.png";
 import react from "../../public/tech_stack/react.png";
@@ -22,7 +22,7 @@ export default function Home() {
       <main className="bg-white px-10">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">Developed by Manu</h1>
+            <h1 className="text-xl font-burtons cursor-default">Developed by Manu</h1>
             <ul className="flex items-center">
               <li><BsFillMoonStarsFill className="cursor-pointer text-2xl" /></li>
               <li><a className="bg-gradient-to-t from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
@@ -34,11 +34,15 @@ export default function Home() {
             <p className="text-md py-5 leading-8 text-gray-800">Frontend developer who loves creating beautiful and functional web pages and apps. Passionate about learning new technologies and best practices.</p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillGithub />
-            <AiFillLinkedin />
+            <a href="https://github.com/ManuBhardwaj001">
+              <AiFillGithub className="cursor-pointer"></AiFillGithub>
+            </a>
+            <a href="https://www.linkedin.com/in/manu-bhardwaj-467290282/">
+              <AiFillLinkedin />
+            </a>
           </div>
           <div className="relative mx-auto background-transparent w-80 h-80 mt-20 rounded-full overflow-hidden">
-            <Image className="w-120 h-80 rounded-full" alt="Avatar" src={Avatar2} layout="fill" objectFit="cover" />
+            <Image className="w-120 h-80 rounded-full" alt="Avatar" src={Avatar} layout="fill" objectFit="cover" />
           </div>
         </section>
         <section>
@@ -48,16 +52,16 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ab consequuntur quia, iusto esse eaque provident ducimus distinctio repudiandae perferendis!</p>
           </div>
           <div>
-            <div className="flex">
-              <Image alt="react" src={react} width={100} height={100}></Image>
-              <Image alt="next" src={next} width={100} height={100}></Image>
-              <Image alt="java" src={java} width={100} height={100}></Image>
-              <Image alt="javascript" src={javascript} width={100} height={100}></Image>
-              <Image alt="bootstrap" src={bootstrap} width={100} height={100}></Image>
-              <Image alt="tailwind" src={tailwind} width={100} height={100}></Image>
-              <Image alt="html" src={html} width={100} height={100}></Image>
-              <Image alt="css" src={css} width={100} height={100}></Image>
-              <Image alt="git" src={git} width={100} height={100}></Image>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+              <Image className="cursor-pointer transition-transform duration-500 transform hover:rotate-180" alt="react" src={react} width={100} height={100} />
+              <Image className="cursor-pointer transition-transform duration-1000 transform hover:scale-x-[-1]" alt="next" src={next} width={100} height={100} />
+              <Image className="transition-transform duration-1000 transform hover:scale-x-[-1] cursor-pointer" alt="git" src={git} width={100} height={100}/>
+              <Image className="transition-transform duration-1000 transform hover:scale-x-[-1] cursor-pointer" alt="css" src={css} width={100} height={100}></Image>
+              <Image className="transition-transform duration-1000 transform hover:scale-x-[-1] cursor-pointer" alt="html" src={html} width={100} height={100}></Image>
+              <Image className="transition-transform duration-1000 transform hover:scale-x-[-1] cursor-pointer" alt="tailwind" src={tailwind} width={100} height={100}></Image>
+              <Image className="transition-transform duration-1000 transform hover:scale-x-[-1] cursor-pointer" alt="bootstrap" src={bootstrap} width={100} height={100}></Image>
+              <Image className="transition-transform duration-1000 transform hover:scale-x-[-1] cursor-pointer" alt="javascript" src={javascript} width={100} height={100}></Image>
+              <Image className="transition-transform duration-1000 transform hover:scale-x-[-1] cursor-pointer" alt="java" src={java} width={100} height={100}></Image>
             </div>
           </div>
         </section>
