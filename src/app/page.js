@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
       <main className="bg-white px-10 dark:bg-gray-900 dark:text-white">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
+          <nav className="py-5 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons cursor-default">Developed by Manu</h1>
             <ul className="flex items-center">
               <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" /></li>
@@ -35,7 +35,7 @@ export default function Home() {
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium">Manu Bhardwaj</h2>
             <h3 className="text-2xl py-2">Frontend Developer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">As a proficient frontend developer, I specialize in the creation of aesthetically pleasing and seamlessly functional web pages and applications. My enthusiasm for this craft is fueled by a commitment to excellence, where each project becomes an opportunity to deliver the highest standards of design and performance. I am devoted to staying on the cutting edge of technology, continually seeking and implementing innovative solutions. With a deep appreciation for precision and a dedication to embracing the latest technologies and industry best practices, I am ready to contribute to and elevate any project.</p>
+            <p className="text-md py-5 px-10 leading-8 text-gray-800 dark:text-white">As a frontend developer, I specialize in crafting user-friendly and visually appealing web pages. Each project is an opportunity for me to explore design nuances and deliver a seamless user experience.  I&apos;m dedicated to staying updated with the latest technologies and implementing practical solutions. With an eye for detail and a commitment to industry best practices, I look forward to contributing to your projects.</p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
             <a href="https://github.com/ManuBhardwaj001">
