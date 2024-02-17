@@ -18,7 +18,18 @@ import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = "./Resume.pdf";
+    link.download = "Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+  const Resume = () => {
+  }
   return (
+
     <div className={darkMode ? "dark" : ""}>
       <Head>
 
@@ -29,7 +40,7 @@ export default function Home() {
             <h1 className="text-xl font-burtons cursor-default">Developed by Manu</h1>
             <ul className="flex items-center">
               <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" /></li>
-              <li><a className="bg-gradient-to-t from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
+              <li><a onClick={handleDownload} className="bg-gradient-to-t from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
             </ul>
           </nav>
           <div className="text-center p-10">
@@ -55,7 +66,7 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">Lorem ipsum dolor sit amet consectetur <span className="text-teal-500">adipisicing</span> elit. Error, corrupti blanditiis quae placeat <span className="text-teal-500">maxime</span> similique!</p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ab consequuntur quia, iusto esse eaque provident ducimus distinctio repudiandae perferendis!</p>
           </div>
-          <div className="flex shadow-lg p-10 rounded-xl flex-col items-center mt-10 space-y-4 dark:shadow-white">
+          <div className="flex shadow-lg py-10 px-8 rounded-xl flex-col items-center mt-10 space-y-4 dark:shadow-white">
             {/* Top row */}
             <div className="flex space-x-4">
               <Image className="cursor-pointer transition-transform duration-500 transform hover:rotate-180" alt="react" src={react} width={100} height={100} />
