@@ -14,20 +14,11 @@ import bootstrap from "../../public/tech_stack/bootstrap.png"
 import tailwind from "../../public/tech_stack/tailwind.png"
 import git from "../../public/tech_stack/git.png"
 import { useState } from "react";
+import { TailwindcssButtons } from "./components/TailwindcssButtons";
 
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = "./Resume.pdf";
-    link.download = "Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-  const Resume = () => {
-  }
   return (
 
     <div className={darkMode ? "dark" : ""}>
@@ -40,7 +31,9 @@ export default function Home() {
             <h1 className="text-xl font-burtons cursor-default">Developed by Manu</h1>
             <ul className="flex items-center">
               <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" /></li>
-              <li><a onClick={handleDownload} className="bg-gradient-to-t from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
+              {/* <li>className="bg-gradient-to-t from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li> */}
+              <li><a href="./Resume.pdf" download="Resume.pdf" ><TailwindcssButtons /></a></li>
+
             </ul>
           </nav>
           <div className="text-center p-10">
@@ -57,7 +50,7 @@ export default function Home() {
             </a>
           </div>
           <div className="relative mx-auto background-transparent w-80 h-80 mt-20 rounded-full overflow-hidden">
-            <Image className="w-120 h-80 rounded-full" alt="Avatar" src={Avatar} layout="fill" objectFit="cover" />
+            <Image className=" h-80 rounded-full" alt="Avatar" src={Avatar} fill />
           </div>
         </section>
         <section>
