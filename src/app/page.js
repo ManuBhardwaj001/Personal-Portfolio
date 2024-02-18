@@ -42,10 +42,10 @@ export default function Home() {
             <p className="text-md py-5 px-10 leading-8 text-gray-800 dark:text-white">As a frontend developer, I specialize in crafting user-friendly and visually appealing web pages. Each project is an opportunity for me to explore design nuances and deliver a seamless user experience.  I&apos;m dedicated to staying updated with the latest technologies and implementing practical solutions. With an eye for detail and a commitment to industry best practices, I look forward to contributing to your projects.</p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
-            <a href="https://github.com/ManuBhardwaj001">
+            <a target="_blank" href="https://github.com/ManuBhardwaj001">
               <AiFillGithub className="cursor-pointer"></AiFillGithub>
             </a>
-            <a href="https://www.linkedin.com/in/manu-bhardwaj-467290282/">
+            <a target="_blank" href="https://www.linkedin.com/in/manu-bhardwaj-467290282/">
               <AiFillLinkedin />
             </a>
           </div>
