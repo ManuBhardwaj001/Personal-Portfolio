@@ -15,6 +15,7 @@ import tailwind from "../../public/tech_stack/tailwind.png"
 import git from "../../public/tech_stack/git.png"
 import { useState } from "react";
 import { TailwindcssButtons } from "./components/TailwindcssButtons";
+import { TextGenerateEffectDemo } from "./components/TGE";
 
 
 export default function Home() {
@@ -39,7 +40,8 @@ export default function Home() {
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium">Manu Bhardwaj</h2>
             <h3 className="text-2xl py-2">Frontend Developer</h3>
-            <p className="text-md py-5 px-10 leading-8 text-gray-800 dark:text-white">As a frontend developer, I specialize in crafting user-friendly and visually appealing web pages. Each project is an opportunity for me to explore design nuances and deliver a seamless user experience.  I&apos;m dedicated to staying updated with the latest technologies and implementing practical solutions. With an eye for detail and a commitment to industry best practices, I look forward to contributing to your projects.</p>
+            {/* <p className="text-md py-5 px-10 leading-8 text-gray-800 dark:text-white">As a frontend developer, I specialize in crafting user-friendly and visually appealing web pages. Each project is an opportunity for me to explore design nuances and deliver a seamless user experience.  I&apos;m dedicated to staying updated with the latest technologies and implementing practical solutions. With an eye for detail and a commitment to industry best practices, I look forward to contributing to your projects.</p> */}
+            <TextGenerateEffectDemo className="leading-8" />
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
             <a target="_blank" href="https://github.com/ManuBhardwaj001">
@@ -48,18 +50,19 @@ export default function Home() {
             <a target="_blank" href="https://www.linkedin.com/in/manu-bhardwaj-467290282/">
               <AiFillLinkedin />
             </a>
+
           </div>
           <div className="relative mx-auto background-transparent w-80 h-80 mt-20 rounded-full overflow-hidden">
             <Image className=" h-80 rounded-full" alt="Avatar" src={Avatar} fill />
           </div>
         </section>
         <section>
-          <div>
+          {/* <div>
             <h3 className="text-3xl py-1">Technologies I work on</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">Lorem ipsum dolor sit amet consectetur <span className="text-teal-500">adipisicing</span> elit. Error, corrupti blanditiis quae placeat <span className="text-teal-500">maxime</span> similique!</p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ab consequuntur quia, iusto esse eaque provident ducimus distinctio repudiandae perferendis!</p>
-          </div>
-          <div className="flex shadow-lg py-10 px-8 rounded-xl flex-col items-center mt-10 space-y-4 dark:shadow-white">
+          </div> */}
+          <div className="flex shadow-lg py-10 rounded-xl flex-col items-center mt-10 space-y-4 dark:shadow-white">
             {/* Top row */}
             <div className="flex space-x-4">
               <Image className="cursor-pointer transition-transform duration-500 transform hover:rotate-180" alt="react" src={react} width={100} height={100} />
