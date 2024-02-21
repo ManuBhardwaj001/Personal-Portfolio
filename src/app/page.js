@@ -16,6 +16,11 @@ import git from "../../public/tech_stack/git.png"
 import { useState } from "react";
 import { TailwindcssButtons } from "./components/TailwindcssButtons";
 import { TextGenerateEffectDemo } from "./components/TGE";
+import { TextRevealCard } from "./components/ui/text-reveal-card";
+import { SparklesPreview } from "./components/SparklesPreview";
+import { ThreeDCardDemo } from "./components/ThreeDNetflix";
+import { ThreeDSavvySquare } from "./components/ThreeDSavvySquare";
+
 
 
 export default function Home() {
@@ -37,9 +42,11 @@ export default function Home() {
 
             </ul>
           </nav>
+          <SparklesPreview />
+          {/* <TextRevealCard /> */}
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium">Manu Bhardwaj</h2>
-            <h3 className="text-2xl py-2">Frontend Developer</h3>
+            {/* <h2 className="text-5xl py-2 text-teal-600 font-medium">Manu Bhardwaj</h2>
+            <h3 className="text-2xl py-2">Frontend Developer</h3> */}
             {/* <p className="text-md py-5 px-10 leading-8 text-gray-800 dark:text-white">As a frontend developer, I specialize in crafting user-friendly and visually appealing web pages. Each project is an opportunity for me to explore design nuances and deliver a seamless user experience.  I&apos;m dedicated to staying updated with the latest technologies and implementing practical solutions. With an eye for detail and a commitment to industry best practices, I look forward to contributing to your projects.</p> */}
             <TextGenerateEffectDemo className="leading-8" />
           </div>
@@ -79,6 +86,15 @@ export default function Home() {
               <Image className="cursor-pointer transition-transform duration-1000 transform hover:scale-x-[-1]" alt="java" src={java} width={100} height={100} />
               <Image className="cursor-pointer transition-transform duration-1000 transform hover:scale-x-[-1]" alt="git" src={git} width={100} height={100} />
             </div>
+          </div>
+        </section>
+        <section>
+          <div className="text-center pt-10 mt-5 text-5xl -mb-10 text-teal-600 font-medium drop-shadow-lg">
+            My Projects
+          </div>
+          <div className="flex justify-evenly">
+            <ThreeDCardDemo />
+            <ThreeDSavvySquare />
           </div>
         </section>
       </main>
