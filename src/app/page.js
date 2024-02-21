@@ -92,11 +92,12 @@ export default function Home() {
           <div className="text-center pt-10 mt-5 text-5xl -mb-10 text-teal-600 font-medium drop-shadow-lg">
             My Projects
           </div>
-          <div className="flex justify-evenly">
+          <div className="grid grid-flow-row sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
             <ThreeDCardDemo />
             <ThreeDSavvySquare />
           </div>
         </section>
+
       </main>
     </div>
   );
