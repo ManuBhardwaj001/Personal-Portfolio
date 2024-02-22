@@ -73,7 +73,7 @@ export default function Home() {
               className=" h-80 rounded-full"
               alt="Avatar"
               src={Avatar}
-              fill
+              fill unoptimized  
             />
           </div>
         </section>
