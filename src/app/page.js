@@ -92,6 +92,7 @@ export default function Home() {
                 src={react}
                 width={100}
                 height={100}
+                unoptimized
               />
             </div>
             {/* Middle row */}
@@ -102,6 +103,7 @@ export default function Home() {
                 src={next}
                 width={100}
                 height={100}
+                unoptimized
               />
               <Image
                 className="cursor-pointer transition-transform duration-1000 transform hover:scale-x-[-1]"
@@ -109,6 +111,7 @@ export default function Home() {
                 src={bootstrap}
                 width={100}
                 height={100}
+                unoptimized
               />
               <Image
                 className="cursor-pointer transition-transform duration-1000 transform hover:scale-x-[-1]"
@@ -116,6 +119,7 @@ export default function Home() {
                 src={html}
                 width={100}
                 height={100}
+                unoptimized
               />
             </div>
             {/* Bottom row */}
@@ -126,6 +130,7 @@ export default function Home() {
                 src={javascript}
                 width={100}
                 height={100}
+                unoptimized
               />
               <Image
                 className="cursor-pointer transition-transform duration-1000 transform hover:scale-x-[-1]"
@@ -133,6 +138,7 @@ export default function Home() {
                 src={java}
                 width={100}
                 height={100}
+                unoptimized
               />
               <Image
                 className="cursor-pointer transition-transform duration-1000 transform hover:scale-x-[-1]"
@@ -140,6 +146,7 @@ export default function Home() {
                 src={git}
                 width={100}
                 height={100}
+                unoptimized
               />
             </div>
           </div>
