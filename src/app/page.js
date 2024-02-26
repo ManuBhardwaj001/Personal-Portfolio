@@ -16,30 +16,29 @@ import git from "../../public/tech_stack/git.png";
 import { useState } from "react";
 import { TailwindcssButtons } from "./components/TailwindcssButtons";
 import { TextGenerateEffectDemo } from "./components/TGE";
-import { SparklesPreview } from "./components/SparklesPreview";
+import { Sparkles } from "./components/Sparkles";
 import { ThreeDCardDemo } from "./components/ThreeDNetflix";
 import { ThreeDSavvySquare } from "./components/ThreeDSavvySquare";
-import { TRC } from "./components/TRC";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head></Head>
-      <main className="bg-white px-10 dark:bg-gray-900 dark:text-white">
-        <section className="min-h-screen">
-          <nav className="py-5 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons cursor-default">
+      <main className="bg-white dark:bg-gray-900 dark:text-white">
+        <Sparkles />
+        <section id="about" className="min-h-screen">
+          <nav className="py-5 mb-12 flex  justify-end">
+            {/* <h1 className="text-xl font-burtons cursor-default">
               Developed by Manu
-            </h1>
-            <ul className="flex items-center">
+            </h1> */}
+            <ul className="flex items-center justify-center">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer text-2xl"
                 />
               </li>
-              {/* <li>className="bg-gradient-to-t from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li> */}
               <li>
                 <a href="./Resume.pdf" download="Resume.pdf">
                   <TailwindcssButtons />
@@ -47,14 +46,8 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="flex justify-center">
-            <TRC />
-          </div>
-          {/* <SparklesPreview /> */}
-          <div className="text-center p-10">
-            {/* <h2 className="text-5xl py-2 text-teal-600 font-medium">Manu Bhardwaj</h2>
-            <h3 className="text-2xl py-2">Frontend Developer</h3> */}
-            {/* <p className="text-md py-5 px-10 leading-8 text-gray-800 dark:text-white">As a frontend developer, I specialize in crafting user-friendly and visually appealing web pages. Each project is an opportunity for me to explore design nuances and deliver a seamless user experience.  I&apos;m dedicated to staying updated with the latest technologies and implementing practical solutions. With an eye for detail and a commitment to industry best practices, I look forward to contributing to your projects.</p> */}
+          <div className="flex justify-center">{/* <TRC /> */}</div>
+          <div className="text-center p-10 px-20">
             <TextGenerateEffectDemo className="leading-8" />
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
@@ -73,19 +66,18 @@ export default function Home() {
               className=" h-80 rounded-full"
               alt="Avatar"
               src={Avatar}
-              fill unoptimized  
+              fill
+              unoptimized
             />
           </div>
         </section>
         <section>
-          {/* <div>
-            <h3 className="text-3xl py-1">Technologies I work on</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">Lorem ipsum dolor sit amet consectetur <span className="text-teal-500">adipisicing</span> elit. Error, corrupti blanditiis quae placeat <span className="text-teal-500">maxime</span> similique!</p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ab consequuntur quia, iusto esse eaque provident ducimus distinctio repudiandae perferendis!</p>
-          </div> */}
-          <div className="flex shadow-lg py-10 rounded-xl flex-col items-center mt-10 space-y-4 dark:shadow-white">
+          <div
+            className="flex shadow-lg py-[5rem] mx-6 sm:mx-8 md:mx-8 lg:mx-8 xl:mx-10
+ rounded-xl flex-col items-center mt-10 space-y-4 dark:shadow-white"
+          >
             {/* Top row */}
-            <div className="flex space-x-4">
+            <div className="flex">
               <Image
                 className="cursor-pointer transition-transform duration-500 transform hover:rotate-180"
                 alt="react"
@@ -113,6 +105,7 @@ export default function Home() {
                 height={100}
                 unoptimized
               />
+
               <Image
                 className="cursor-pointer transition-transform duration-1000 transform hover:scale-x-[-1]"
                 alt="html"
@@ -151,7 +144,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section id="projectsSection">
           <div className="text-center pt-10 mt-5 text-5xl -mb-10 text-teal-600 font-medium drop-shadow-lg">
             My Projects
           </div>
