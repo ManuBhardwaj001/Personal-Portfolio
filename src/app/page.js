@@ -15,7 +15,7 @@ import tailwind from "../../public/tech_stack/tailwind.png";
 import git from "../../public/tech_stack/git.png";
 import { useState } from "react";
 import { TailwindcssButtons } from "./components/TailwindcssButtons";
-import { TextGenerateEffectDemo } from "./components/TGE";
+import { TGE } from "./components/TGE";
 import { Sparkles } from "./components/Sparkles";
 import { ThreeDCardDemo } from "./components/ThreeDNetflix";
 import { ThreeDSavvySquare } from "./components/ThreeDSavvySquare";
@@ -47,10 +47,10 @@ export default function Home() {
             </ul>
           </nav>
           <div className="flex justify-center">{/* <TRC /> */}</div>
-          <div className="text-center p-10 px-20">
-            <TextGenerateEffectDemo className="leading-8" />
+          <div className="text-center mt-[6rem] p-10 px-20">
+            <TGE className="leading-8" />
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
+          <div className="text-5xl flex justify-center gap-16 py-10 text-gray-600 dark:text-white">
             <a target="_blank" href="https://github.com/ManuBhardwaj001">
               <AiFillGithub className="cursor-pointer"></AiFillGithub>
             </a>
@@ -61,6 +61,8 @@ export default function Home() {
               <AiFillLinkedin />
             </a>
           </div>
+        </section>
+        <section>
           <div className="relative mx-auto background-transparent w-80 h-80 mt-20 rounded-full overflow-hidden">
             <Image
               className=" h-80 rounded-full"
@@ -70,10 +72,8 @@ export default function Home() {
               unoptimized
             />
           </div>
-        </section>
-        <section>
           <div
-            className="flex shadow-lg py-[5rem] mx-6 sm:mx-8 md:mx-8 lg:mx-8 xl:mx-10
+            className="flex shadow-lg py-[5rem] mx-6 sm:mx-8 md:mx-[8rem] lg:mx-[12rem] xl:mx-[14rem]
  rounded-xl flex-col items-center mt-10 space-y-4 dark:shadow-white"
           >
             {/* Top row */}

@@ -5,6 +5,6 @@ const words = `I specialize in crafting visually appealing and user-friendly web
 Eager to contribute to your projects.
 `;
 
-export function TextGenerateEffectDemo() {
+export function TGE() {
   return <TextGenerateEffect words={words} className="whitespace-pre-line" />;
 }
